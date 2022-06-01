@@ -1,0 +1,45 @@
+{
+	"name": "react-layout-utils",
+	"version": "0.0.0",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/my-lib.umd.js",
+	"module": "./dist/my-lib.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/my-lib.es.js",
+			"require": "./dist/my-lib.umd.js"
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"start": "start-storybook",
+		"build-storybook": "build-storybook",
+		"new": "plop"
+	},
+	"dependencies": {
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"ui-box": "^5.0.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.18.2",
+		"@storybook/addon-actions": "^6.5.6",
+		"@storybook/addon-essentials": "^6.5.6",
+		"@storybook/addon-interactions": "^6.5.6",
+		"@storybook/addon-links": "^6.5.6",
+		"@storybook/builder-vite": "^0.1.35",
+		"@storybook/react": "^6.5.6",
+		"@storybook/testing-library": "^0.0.11",
+		"@types/react": "^18.0.0",
+		"@types/react-dom": "^18.0.0",
+		"@vitejs/plugin-react": "^1.3.0",
+		"babel-loader": "^8.2.5",
+		"plop": "^3.1.0",
+		"typescript": "^4.6.3",
+		"vite": "^2.9.9"
+	}
+}
